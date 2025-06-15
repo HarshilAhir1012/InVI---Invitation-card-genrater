@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Register for an account on InVI to create and manage your AI-powered invitations.">
+  <meta name="keywords" content="register, sign up, InVI account, invitation cards, AI invitations">
+  <meta name="author" content="InVI">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Register - InVI - Elegant AI Invitation Cards</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#0d0d0d">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/form.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    :root {
+      --primary: #6c63ff;
+      --primary-hover: #5a52d4;
+      --bg-primary: #ffffff;
+      --bg-secondary: #f5f7fa;
+      --text-primary: #2d3748;
+      --text-secondary: #4a5568;
+      --border-color: #e2e8f0;
+      --card-bg: #ffffff;
+      --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      --nav-bg: rgba(255, 255, 255, 0.9);
+      --footer-bg: #f8fafc;
+      --input-bg: #ffffff;
+      --input-border: #e2e8f0;
+      --btn-text: #ffffff;
+      --success: #48bb78;
+      --error: #f56565;
+      --warning: #ed8936;
+      --info: #4299e1;
+    }
+
+    [data-theme="dark"] {
+      --primary: #8b5cf6;
+      --primary-hover: #7c3aed;
+      --bg-primary: #0d0d0d;
+      --bg-secondary: #121212;
+      --text-primary: #ffffff;
+      --text-secondary: #a0a0a0;
+      --border-color: #2d2d2d;
+      --card-bg: #1a1a1a;
+      --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+      --nav-bg: rgba(0, 0, 0, 0.9);
+      --footer-bg: #000000;
+      --input-bg: #1a1a1a;
+      --input-border: #333333;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      transition: all 0.3s ease;
+    }
+
+    .register-hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+      padding: 2rem 0;
+      overflow: hidden;
+    }
+    
+    .register-container {
+      display: flex;
+      max-width: 1200px;
+      width: 90%;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .register-features {
+      flex: 1;
+      padding: 4rem 3rem;
+      background: linear-gradient(135deg, var(--accent-color) 0%, var(--btn-hover) 100%);
+      color: white;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-size: 200% 200%;
+      animation: gradientBG 15s ease infinite;
+    }
+    
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    
+    .register-features::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNwYXR0ZXJuKSIvPjwvc3ZnPg==');
+      opacity: 0.1;
+      z-index: 0;
+    }
+    
+    .register-features-content {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 2rem 0;
+    }
+    
+    .register-features h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+      position: relative;
+      display: inline-block;
+      line-height: 1.2;
+    }
+    
+    .register-features h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 2px;
+    }
+    
+    .register-features p {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      opacity: 0.9;
+      line-height: 1.8;
+      max-width: 90%;
+      font-weight: 300;
+      letter-spacing: 0.3px;
+    }
+    
+    .features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 3rem;
+    }
+    
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    .feature-item::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5px;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.8);
+      transition: all 0.4s ease;
+      opacity: 0;
+    }
+    
+    .feature-item:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .feature-item:hover::before {
+      opacity: 1;
+    }
+    
+    .feature-item i {
+      font-size: 1.6rem;
+      color: white;
+      min-width: 40px;
+      text-align: center;
+      transition: all 0.3s ease;
+      margin-top: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+    }
+    
+    .feature-item:hover i {
+      transform: translateY(-3px) scale(1.1);
+      color: white;
+      background: var(--accent-color);
+      box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+    }
+    
+    .feature-item h3 {
+      color: white;
+      margin: 0 0 8px 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    .feature-item p {
+      color: rgba(255, 255, 255, 0.8);
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      font-weight: 300;
+    }
+    
+    .register-form-container {
+      flex: 1;
+      padding: 4rem 3rem;
+      background: var(--card-bg);
+      position: relative;
+    }
+    
+    .register-header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    
+    .register-header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .register-header p {
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    
+    .input-group {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+    
+    .input-group i {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-secondary);
+      transition: color 0.3s ease;
+    }
+    
+    .form-input {
+      width: 100%;
+      padding: 1rem 1rem 1rem 3rem;
+      font-size: 1rem;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      background: var(--input-bg);
+      color: var(--text-primary);
+      height: 3.5rem;
+      box-sizing: border-box;
+    }
+    
+    .input-group {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+    
+    .input-group i {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-secondary);
+    }
+    
+    .input-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+    
+    .form-input:focus {
+      border-color: var(--accent-color);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(108, 99, 255, 0.2);
+    }
+    
+    .form-input:focus + i {
+      color: var(--accent-color);
+    }
+    
+    .toggle-password {
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      cursor: pointer;
+      padding: 0.5rem;
+      transition: color 0.3s ease;
+    }
+    
+    .toggle-password:hover {
+      color: var(--accent-color);
+    }
+    
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent-color);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    
+    .cta-button:hover {
+      background: var(--btn-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(108, 99, 255, 0.3);
+    }
+    
+    .cta-button i {
+      margin-left: 8px;
+      transition: transform 0.3s ease;
+    }
+    
+    .cta-button:hover i {
+      transform: translateX(5px);
+    }
+    
+    .auth-footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: var(--text-secondary);
+    }
+    
+    .auth-footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .auth-footer a:hover {
+      text-decoration: underline;
+    }
+    
+    @media (max-width: 992px) {
+      .register-container {
+        flex-direction: column;
+        max-width: 600px;
+      }
+      
+      .register-features {
+        padding: 3rem 2rem;
+      }
+      
+      .register-form-container {
+        padding: 3rem 2rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .register-container {
+        width: 95%;
+      }
+      
+      .register-features h2 {
+        font-size: 1.8rem;
+      }
+      
+      .register-header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body class="theme-transition">
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <span id="theme-icon">🌙</span>
+  </button>
+
+  <header role="banner">
+    <div class="logo-container">
+      <a href="index.html" class="logo-text">In<span class="highlight">VI</span></a>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="invi.html">Create Invitation</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1" class="register-hero">
+    <div class="register-container">
+      <!-- Left Side: Features -->
+      <div class="register-features">
+        <div class="register-features-content">
+          <div class="register-features-content">
+            <h2>Join InVI Today</h2>
+            <p>Create stunning, personalized invitations for your special moments with our AI-powered platform. Experience the future of event planning with just a few clicks.</p>
+            
+            <div class="features-list">
+              <div class="feature-item">
+                <i class="fas fa-robot"></i>
+                <div>
+                  <h3>AI-Powered Designs</h3>
+                  <p>Beautiful, unique designs crafted by artificial intelligence</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-sliders-h"></i>
+                <div>
+                  <h3>Endless Customization</h3>
+                  <p>Personalize every detail to match your event's theme</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-bolt"></i>
+                <div>
+                  <h3>Quick & Easy Creation</h3>
+                  <p>Create professional invitations in minutes, not hours</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-share-alt"></i>
+                <div>
+                  <h3>Easy Sharing</h3>
+                  <p>Share your invitations via email, social media, or direct link</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Side: Registration Form -->
+      <div class="register-form-container">
+        <div class="register-header">
+          <h1>Create Your <span class="highlight">Account</span></h1>
+          <p>Join InVI to create beautiful, personalized invitations</p>
+        </div>
+        
+        <form id="registration-form" class="register-form">
+          <div class="form-group">
+            <div class="input-group">
+              <label for="username">Username</label>
+              <i class="fas fa-user"></i>
+              <input type="text" id="username" name="username" class="form-input" required>
+            </div>
+            <div class="input-group">
+              <label for="email">Email</label>
+              <i class="fas fa-envelope"></i>
+              <input type="email" id="email" name="email" class="form-input" required>
+            </div>
+            <div class="input-group">
+              <label for="password">Password</label>
+              <i class="fas fa-lock"></i>
+              <input type="password" id="password" name="password" class="form-input" required>
+              <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                <i class="far fa-eye"></i>
+              </button>
+            </div>
+            <div class="input-group">
+              <label for="confirm-password">Confirm Password</label>
+              <i class="fas fa-lock"></i>
+              <input type="password" id="confirm-password" name="confirm-password" class="form-input" required>
+              <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                <i class="far fa-eye"></i>
+              </button>
+            </div>
+          </div>
+          
+          <button type="submit" class="cta-button">
+            <span>Create Account</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+          
+          <div class="auth-footer">
+            <p>Already have an account? <a href="login.html">Sign In</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">In<span class="highlight">VI</span></span>
+          <p>Elegant AI Invitation Cards</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invi.html">Create Invitation</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: harshilahir1012@gmail.com</p>
+          <p>Phone: +91 9687285246</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 InVI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    
+    // Check for saved theme preference or use system preference
+    const currentTheme = localStorage.getItem('theme') || 
+                        (prefersDarkScheme.matches ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    updateThemeIcon(currentTheme);
+    
+    // Toggle theme on button click
+    themeToggle.addEventListener('click', () => {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeIcon(newTheme);
+    });
+    
+    // Update theme icon based on current theme
+    function updateThemeIcon(theme) {
+      themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+    
+    // Form validation
+    function validateForm() {
+      const username = document.getElementById('username').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+      
+      // Reset previous errors
+      document.querySelectorAll('.error-message').forEach(el => el.remove());
+      document.querySelectorAll('.input-group').forEach(el => el.classList.remove('error'));
+      
+      let isValid = true;
+      
+      // Validate username
+      if (username.length < 3) {
+        showError('username', 'Username must be at least 3 characters long');
+        isValid = false;
+      }
+      
+      // Validate email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        showError('email', 'Please enter a valid email address');
+        isValid = false;
+      }
+      
+      // Validate password
+      if (password.length < 8) {
+        showError('password', 'Password must be at least 8 characters long');
+        isValid = false;
+      }
+      
+      // Validate password match
+      if (password !== confirmPassword) {
+        showError('confirm-password', 'Passwords do not match');
+        isValid = false;
+      }
+      
+      return isValid;
+    }
+    
+    // Show error message
+    function showError(fieldId, message) {
+      const field = document.getElementById(fieldId);
+      const inputGroup = field.closest('.input-group');
+      
+      // Add error class to input group
+      inputGroup.classList.add('error');
+      
+      // Create and append error message
+      const errorMsg = document.createElement('div');
+      errorMsg.className = 'error-message';
+      errorMsg.textContent = message;
+      errorMsg.style.color = 'var(--error)';
+      errorMsg.style.fontSize = '0.8rem';
+      errorMsg.style.marginTop = '0.5rem';
+      
+      inputGroup.appendChild(errorMsg);
+    }
+    
+    // Toggle password visibility
+    document.querySelectorAll('.toggle-password').forEach(button => {
+      button.addEventListener('click', function() {
+        const input = this.previousElementSibling;
+        const icon = this.querySelector('i');
+        
+        if (input.type === 'password') {
+          input.type = 'text';
+          icon.classList.replace('fa-eye', 'fa-eye-slash');
+          this.setAttribute('aria-label', 'Hide password');
+        } else {
+          input.type = 'password';
+          icon.classList.replace('fa-eye-slash', 'fa-eye');
+          this.setAttribute('aria-label', 'Show password');
+        }
+      });
+    });
+    
+    // Form submission
+    document.getElementById('register-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      if (validateForm()) {
+        // Show success message
+        showNotification('Registration successful! Redirecting...', 'success');
+        
+        // In a real app, you would submit the form data to a server here
+        // For demo purposes, we'll just log the data and redirect after a delay
+        const formData = new FormData(this);
+        const formDataObj = Object.fromEntries(formData.entries());
+        console.log('Form data:', formDataObj);
+        
+        // Redirect to login page after a short delay
+        setTimeout(() => {
+          window.location.href = 'login.html';
+        }, 2000);
+      }
+    });
+    
+    // Show notification
+    function showNotification(message, type = 'info') {
+      const notification = document.createElement('div');
+      notification.className = `notification ${type}`;
+      notification.textContent = message;
+      
+      // Add to body
+      document.body.appendChild(notification);
+      
+      // Remove after 5 seconds
+      setTimeout(() => {
+        notification.classList.add('show');
+        
+        setTimeout(() => {
+          notification.classList.remove('show');
+          
+          setTimeout(() => {
+            notification.remove();
+          }, 300);
+        }, 5000);
+      }, 100);
+    }
+    
+    // Add notification styles
+    const style = document.createElement('style');
+    style.textContent = `
+      .notification {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 15px 25px;
+        border-radius: 8px;
+        color: white;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+        z-index: 1000;
+        max-width: 300px;
+      }
+      
+      .notification.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      
+      .notification.success {
+        background-color: var(--success);
+      }
+      
+      .notification.error {
+        background-color: var(--error);
+      }
+      
+      .notification.info {
+        background-color: var(--primary);
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+  <script>
+    // Initialize form functionality when DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add focus/blur effects for form inputs
+      document.querySelectorAll('.form-input').forEach(input => {
+        input.addEventListener('focus', function() {
+          this.parentElement.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+          this.parentElement.classList.remove('focused');
+          
+          // Validate field on blur
+          if (['email', 'username', 'password', 'confirm-password'].includes(this.id)) {
+            validateForm();
+          }
+        });
+      });
+      
+      // Add input event for real-time validation
+      const passwordInput = document.getElementById('password');
+      const confirmPasswordInput = document.getElementById('confirm-password');
+      
+      if (passwordInput) {
+        passwordInput.addEventListener('input', function() {
+          if (confirmPasswordInput && confirmPasswordInput.value) {
+            validateForm();
+          }
+        });
+      }
+      
+      if (confirmPasswordInput) {
+        confirmPasswordInput.addEventListener('input', validateForm);
+      }
+      
+      const form = document.getElementById('registration-form');
+      
+      // Form submission handler
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (!validateForm()) {
+          return;
+        }
+        
+        // Get form values
+        const username = document.getElementById('username').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        
+        // In a real app, you would send this to a server
+        // This is just for demonstration
+        const userData = {
+          username: username,
+          email: email,
+          // Never store passwords in localStorage in production
+          // This is just for demonstration
+          password: btoa(password) // Simple encoding, not secure for production
+        };
+        
+        try {
+          // Store in localStorage (for demo purposes only)
+          localStorage.setItem('currentUser', JSON.stringify(userData));
+          
+          // Show success message
+          showNotification('Account created successfully! Redirecting...', 'success');
+          
+          // Reset form
+          form.reset();
+          
+          // Redirect to dashboard after a short delay
+          setTimeout(() => {
+            window.location.href = 'invi.html';
+          }, 1500);
+        } catch (error) {
+          console.error('Error saving user data:', error);
+          showNotification('An error occurred. Please try again.', 'error');
+        }
+      });
+      
+      // Toggle password visibility
+      document.addEventListener('click', function(e) {
+        if (e.target.closest('.toggle-password') || e.target.classList.contains('toggle-password')) {
+          const button = e.target.classList.contains('toggle-password') ? e.target : e.target.closest('.toggle-password');
+          const icon = button.querySelector('i');
+          const input = button.parentElement.querySelector('input');
+          const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+          input.setAttribute('type', type);
+          
+          // Toggle eye icon
+          if (type === 'password') {
+            icon.classList.remove('fa-eye-slash');
+            icon.classList.add('fa-eye');
+            button.setAttribute('aria-label', 'Show password');
+          } else {
+            icon.classList.remove('fa-eye');
+            icon.classList.add('fa-eye-slash');
+            button.setAttribute('aria-label', 'Hide password');
+          }
+        }
+      });
+      
+      // Add focus effects to form inputs
+      document.querySelectorAll('.form-input').forEach(input => {
+        input.addEventListener('focus', function() {
+          this.parentElement.classList.add('focused');
+        });
+        input.addEventListener('blur', function() {
+          this.parentElement.classList.remove('focused');
+        });
+      });
+      
+      // Form validation
+      function validateForm() {
+        const username = document.getElementById('username').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+        const confirmPassword = document.getElementById('confirm-password').value;
+        let isValid = true;
+        
+        // Reset error states
+        document.querySelectorAll('.error-message').forEach(el => el.remove());
+        document.querySelectorAll('.input-group').forEach(group => group.classList.remove('has-error'));
+        
+        // Validate username
+        if (username.length < 3) {
+          showError('username', 'Username must be at least 3 characters');
+          isValid = false;
+        }
+        
+        // Validate email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          showError('email', 'Please enter a valid email address');
+          isValid = false;
+        }
+        
+        // Validate password
+        if (password.length < 8) {
+          showError('password', 'Password must be at least 8 characters');
+          isValid = false;
+        }
+        
+        // Validate confirm password
+        if (password !== confirmPassword) {
+          showError('confirm-password', 'Passwords do not match');
+          isValid = false;
+        }
+        
+        return isValid;
+      }
+      
+      function showError(fieldId, message) {
+        const inputGroup = document.getElementById(fieldId).closest('.input-group');
+        inputGroup.classList.add('has-error');
+        
+        const errorElement = document.createElement('div');
+        errorElement.className = 'error-message';
+        errorElement.style.color = '#ff4d4d';
+        errorElement.style.fontSize = '0.8rem';
+        errorElement.style.marginTop = '0.25rem';
+        errorElement.textContent = message;
+        
+        inputGroup.appendChild(errorElement);
+      }
+      document.querySelectorAll('.form-input').forEach(input => {
+        // Add focus class when input is focused
+        input.addEventListener('focus', function() {
+          this.parentElement.classList.add('focused');
+        });
+        
+        // Remove focus class when input loses focus, but only if it's empty
+        input.addEventListener('blur', function() {
+          if (this.value === '') {
+            this.parentElement.classList.remove('focused');
+          }
+        });
+        
+        // Check on page load if inputs have values
+        if (input.value !== '') {
+          input.parentElement.classList.add('focused');
+        }
+      });
+      
+      // Notification function
+      function showNotification(message, type = 'info') {
+        // Remove any existing notifications
+        const existingNotification = document.querySelector('.notification');
+        if (existingNotification) {
+          existingNotification.remove();
+        }
+        
+        // Create notification element
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.textContent = message;
+        
+        // Add to body
+        document.body.appendChild(notification);
+        
+        // Show notification
+        setTimeout(() => {
+          notification.classList.add('show');
+        }, 10);
+        
+        // Hide after delay
+        setTimeout(() => {
+          notification.classList.remove('show');
+          setTimeout(() => {
+            notification.remove();
+          }, 300);
+        }, 3000);
+      }
+    });
+    
+    // Add notification styles
+    const style = document.createElement('style');
+    style.textContent = `
+      .notification {
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%) translateY(100px);
+        padding: 12px 24px;
+        border-radius: 8px;
+        color: white;
+        font-weight: 500;
+        z-index: 1000;
+        opacity: 0;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+      
+      .notification.show {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+      }
+      
+      .notification.success {
+        background: #48bb78;
+      }
+      
+      .notification.error {
+        background: #f56565;
+      }
+      
+      .notification.info {
+        background: #4299e1;
+      }
+    `;
+    document.head.appendChild(style);
+  </script>
+  
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particles-config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Create beautiful, AI-powered invitation cards for any occasion with InVI. Design elegant digital invitations in minutes.">
+  <meta name="keywords" content="AI invitations, digital invitations, invitation cards, event invitations, online invitations">
+  <meta name="author" content="InVI">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="InVI - Elegant AI Invitation Cards">
+  <meta property="og:description" content="Create beautiful, AI-powered invitation cards for any occasion.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourdomain.com/invi.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Create Invitation - InVI</title>
+  <link rel="canonical" href="https://yourdomain.com/invi.html" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="theme-color" content="#0d0d0d">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/invitation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&family=Cinzel:wght@400;700&family=Cormorant+Garamond:wght@400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="theme-transition">
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <span id="theme-icon">🌙</span>
+  </button>
+
+  <header role="banner">
+    <div class="logo-container">
+      <a href="index.html" class="logo-text">In<span class="highlight">VI</span></a>
+    </div>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="invi.html" class="active">Create Invitation</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="full-height">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Craft Your <span class="highlight">Exclusive</span> Invitation</h1>
+          <p class="section-subtitle">Design a masterpiece that reflects your unique style and elegance</p>
+          <div class="divider">
+            <span class="divider-line"></span>
+            <i class="fas fa-gem"></i>
+            <span class="divider-line"></span>
+          </div>
+        </div>
+      
+      <div class="creator-layout">
+        <!-- Form Section -->
+        <div class="form-section luxe-card">
+          <form id="invitation-form" class="invitation-form">
+            <!-- Step 1: Event Type -->
+            <div class="form-step active" data-step="1">
+              <h2>What's the occasion?</h2>
+              <div class="event-type-grid">
+                <button type="button" class="event-type" data-type="wedding">
+                  <i class="fas fa-heart"></i>
+                  <span>Wedding</span>
+                </button>
+                <button type="button" class="event-type" data-type="birthday">
+                  <i class="fas fa-birthday-cake"></i>
+                  <span>Birthday</span>
+                </button>
+                <button type="button" class="event-type" data-type="corporate">
+                  <i class="fas fa-briefcase"></i>
+                  <span>Corporate</span>
+                </button>
+                <button type="button" class="event-type" data-type="other">
+                  <i class="fas fa-ellipsis-h"></i>
+                  <span>Other</span>
+                </button>
+              </div>
+              <div class="form-navigation">
+                <button type="button" class="btn btn-next" disabled>Next</button>
+              </div>
+            </div>
+
+            <!-- Step 2: Event Details -->
+            <div class="form-step" data-step="2">
+              <h2>Event Details</h2>
+              <div class="form-group">
+                <label for="event-name">Event Name</label>
+                <input type="text" id="event-name" placeholder="e.g., John & Jane's Wedding" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="event-date">Date</label>
+                  <input type="date" id="event-date" required>
+                </div>
+                <div class="form-group">
+                  <label for="event-time">Time</label>
+                  <input type="time" id="event-time" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="event-location">Location</label>
+                <input type="text" id="event-location" placeholder="Enter venue details" required>
+              </div>
+              <div class="form-navigation">
+                <button type="button" class="btn btn-back">Back</button>
+                <button type="button" class="btn btn-next">Next</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Design -->
+            <div class="form-step" data-step="3">
+              <h2>Design Your Invitation</h2>
+              <div class="design-options">
+                <div class="design-option">
+                  <h3>Color Scheme</h3>
+                  <div class="color-options">
+                    <button type="button" class="color-option" style="background: #6a11cb;"></button>
+                    <button type="button" class="color-option" style="background: #2575fc;"></button>
+                    <button type="button" class="color-option" style="background: #11998e;"></button>
+                    <button type="button" class="color-option" style="background: #ff416c;"></button>
+                    <button type="button" class="color-option" style="background: #ff4b2b;"></button>
+                  </div>
+                </div>
+                <div class="design-option">
+                  <h3>Font Style</h3>
+                  <div class="font-options">
+                    <button type="button" class="font-option" data-font="Poppins">Poppins</button>
+                    <button type="button" class="font-option" data-font="Playfair">Playfair</button>
+                    <button type="button" class="font-option" data-font="Montserrat">Montserrat</button>
+                  </div>
+                </div>
+              </div>
+              <div class="form-navigation">
+                <button type="button" class="btn btn-back">Back</button>
+                <button type="button" class="btn btn-preview">Preview</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Preview Section -->
+        <div class="preview-section luxe-card">
+          <div class="preview-container">
+            <div class="preview-card luxe-elevate">
+          <div class="preview-watermark">
+            <i class="fas fa-crown"></i>
+            <span>Premium</span>
+          </div>
+              <div class="preview-header">
+                <h2 class="preview-title">Your Event Name</h2>
+                <p class="preview-subtitle">You're Invited!</p>
+              </div>
+              <div class="preview-body">
+                <div class="preview-detail">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span class="preview-date">Saturday, June 10, 2023</span>
+                </div>
+                <div class="preview-detail">
+                  <i class="fas fa-clock"></i>
+                  <span class="preview-time">6:00 PM</span>
+                </div>
+                <div class="preview-detail">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span class="preview-location">Venue Location</span>
+                </div>
+              </div>
+              <div class="preview-footer">
+                <p>We can't wait to celebrate with you!</p>
+              </div>
+            </div>
+          </div>
+          <div class="preview-actions">
+            <button class="btn btn-secondary">
+              <i class="fas fa-download"> Download PDF
+            </button>
+            <button class="btn btn-primary">
+              <i class="fas fa-share"> Share
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">In<span class="highlight">VI</span></span>
+          <p>Elegant AI Invitation Cards</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invi.html">Create Invitation</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: harshilahir1012@gmail.com</p>
+          <p>Phone: +91 9687285246</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 InVI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/invitation.js"></script>
+</body>
+</html>
+              </div>
+            </form>
+          </div>
+          
+          <!-- Preview Section -->
+          <div class="preview-container">
+            <h2>Your Invitation Preview</h2>
+            <div id="preview-card" class="invitation-preview">
+              <div class="preview-placeholder">
+                <i class="fas fa-image fa-3x"></i>
+                <p>Your invitation preview will appear here</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">In<span class="highlight">VI</span></span>
+          <p>Elegant AI Invitation Cards</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="invi.html">Create Invitation</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Email: harshilahir1012@gmail.com</p>
+          <p>Phone: +91 9687285246</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2025 InVI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script src="js/invitation.js"></script>
+</body>
+</html>
